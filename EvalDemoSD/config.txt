@@ -1,0 +1,31 @@
+display=43
+eve=0
+
+
+NOTE:
+Above 2 lines set display size and display type.
+
+First line 'display' determines display size.
+
+Options are as below.
+
+displays size:
+3.5" =35
+4.3" =43
+5"   =50
+7"   =70
+10.1"  =101
+
+e.g. please set display=70 for 7.0" display. 
+
+
+Second line 'eve' determines if the display is an intelligent display with EVE4 controller on the board or a simple, bare LCD TFT with RGB/LVDS/MIPI interface.
+
+eve=0 means display without EVE4 intelligent controller
+eve=1 means display with EVE4 intelligent controller and the display should be connected directly to RiBUS on EVAL through FFC (without Don Addon).
+
+
+WARNING: 
+To evalaute bare 10.1" LCD TFT with LVDS interface, eve=1 is the only option. 
+Because EVE4 controller is already on Don Addon 101. 
+
